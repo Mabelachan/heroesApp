@@ -22,7 +22,7 @@ export const HeroCard = ({
       <div className="card">
         <div className="row no-gutters">
           <div className="col-4">
-            <img src={ heroImageUrl} className="card-img" alt={ superhero } />
+            <img src={ heroImageUrl } className="card-img" alt={ superhero } />
           </div>
 
           <div className="col-8">
@@ -39,7 +39,14 @@ export const HeroCard = ({
                   <small className="text-muted">{ first_appearance }</small>
                 </p>
                 
-                <Link to={`/hero/${ id }`}>
+                <Link 
+                  to={`/hero/${ id }`} 
+                  style={{ 
+                    textDecoration: 'none', 
+                    color: '#555555', 
+                    fontWeight: 'bold'  
+                  }}  
+                >
                   Más...
                 </Link>
 
